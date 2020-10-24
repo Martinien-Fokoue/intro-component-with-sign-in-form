@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  
+  <div class="container">
+      <div class="description">
+        <h4 class="title">Learn to code by watching others</h4>
+        <p>see how experiencesd developpers solve problem in real-time. Watching scripted tutorials is great but understanding how developpers thinks is invaluable.</p>
+      </div>
+
+      <div class="form-content">
+        <div class="tryIt">
+          <span class="bold">Try it free 7 days</span> then $20/mo. thereafter
+        </div>
+
+        <form  class="form" autocomplete="off">
+          <div class="entry">
+            <input type="text" name="firstName" id="firstName" placeholder="First Name">
+            <p class="error"></p>
+            <p class="exclam"></p>
+          </div>
+          <div class="entry">
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+            <p class="error"></p>
+            <p class="exclam"></p>
+          </div>
+          
+          <div class="entry">
+            <input type="email" name="emailAddress" id="emailAddress" placeholder="Email Address">
+            <p class="error"></p>
+            <p class="exclam"></p>
+          </div>
+          
+          <div class="entry">
+            <input type="password" name="password" id="password" placeholder="password">
+            <p class="error"></p>
+            <p class="exclam"></p>
+          </div>
+
+          <button class="btn" id="btn">claim your free trial</button>
+
+          <span class="conditionsTerms">By clicking the button you are agreeing to our <span class="red">Terms and Services</span>.</span>
+        </form>
+    </div>
+  </div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      <br>Coded by <a href="https://github.com/Martinien-Fokoue">Martinien Fokoue</a>.
+    </p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

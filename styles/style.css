@@ -1,0 +1,219 @@
+body{
+    font-family: poppins;
+    background: url('../images/bg-intro-mobile.png');
+    background-size: cover;
+    background-color:hsl(0, 100%, 74%, .8);
+    color: #fff;
+    
+}
+
+.container{
+    max-width: 90%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+    .description{
+        /* border: 2px solid red; */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        .description .title{
+            font-size: 25px;
+            line-height: 35px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .description p{
+            font-size: 14px;
+            line-height: 23px;
+        }
+    
+    .tryIt{
+        background-color: hsl(248, 32%, 49%);
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px 40px;
+        line-height: 30px;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, .2);
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+        .tryIt .bold{
+            font-weight: 600;
+        }
+
+
+    /* ========================= 
+        FORM STYLE
+    ================================*/
+
+    .form{
+        
+        border-radius: 5px;
+        box-shadow: 0 10px 5px rgba(0, 0, 0, .2);
+        background-color: #fff;    
+        padding: 30px 20px;
+    }
+
+        .entry{
+            width: 100%;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        
+
+            .entry input{
+                width: 90%;
+                height: 100%;
+                padding: 12px;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                border: 1px solid #ccc;
+                color: hsl(249, 10%, 26%);
+                font-weight: 600;
+                font-family: poppins;
+                transition: all .3s ease;
+            }
+
+            .btn{
+                border: none;
+                color: #fff;
+                padding: 10px;
+                font-size: 16px;
+                text-transform: uppercase;
+                background-color: hsl(154, 59%, 51%);
+                box-shadow: 0 5px 3px rgba(19, 150, 93, .8);
+                border-radius: 5px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                width: 100%;
+                text-align: center;
+                font-family: poppins;
+                outline: none;
+            }
+
+            
+
+            .conditionsTerms{
+                display: block;
+                color: hsl(246, 25%, 77%);
+                font-size: 10px;
+                line-height: 18px;
+                text-align: center;
+                width: 100%;
+                
+                /* margin: 0 20px; */
+            }
+
+                .conditionsTerms .red{
+                    color: hsl(0, 100%, 74%);
+                    font-weight: 600;
+                }
+
+                .error, .exclam{
+                    display: none;
+                }
+                .error-active{
+                    color: hsl(0, 100%, 74%);
+                    font-size: 10px;
+                    font-style: italic;
+                    text-align: right;
+                    margin-top: 5px;
+                    display: block;
+                }
+                .exclam-active{
+                    border-radius: 50%;
+                    background-color: hsl(0, 100%, 74%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 10px;
+                    height: 10px;
+                    padding: 4px;
+                    font-size: 14px;
+                    position: absolute;
+                    top: 14px;
+                    right: 25px;
+                    color: #fff;    
+                }
+
+            footer{
+                background: #000;
+                padding: 4px 10px;
+            }
+            .attribution{
+                text-align: center;
+                line-height: 25px;
+            }
+                .attribution a{
+                    text-decoration: none;
+                    color: hsl(0, 100%, 74%);
+                }
+                    .attribution a:hover{
+                        text-decoration: underline;
+                    }
+
+
+    /* ============================
+            Media query desktop
+    ===========================*/
+    @media screen and (min-width : 700px){
+
+        body{
+            background: url('../images/bg-intro-desktop.png');
+            background-color:hsl(0, 100%, 74%, .8);
+            
+        }
+        .container{
+            flex-direction: row;
+            justify-content: space-around;
+            max-width: 80%;
+            margin: 100px auto;
+        }
+        .description{
+            flex: 1;
+            margin-right: 60px;
+            text-align: left;
+        }
+
+            .description .title{
+                font-size: 50px;
+                line-height: 55px;
+                font-weight: 700;
+            }
+
+            .description p{
+                font-size: 16px;
+            }
+
+
+        .entry input{
+            width: 93%;
+        }
+
+        .btn{
+            width: 99%;
+        }
+
+        .conditionsTerms{
+            font-size: 10px;
+            text-align: center;
+        }
+
+        footer{
+            padding: 50px;
+            
+        }
+
+    }
+
+    @media screen and (maw-width:530){
+
+    }
